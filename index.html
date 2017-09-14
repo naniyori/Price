@@ -30,12 +30,12 @@
 
 <script>
 function calculate() {
-if(document.getElementById("1").checked!=true&&document.getElementById("2").checked!=true&&document.getElementById("3").checked!=true){document.getElementById("demo").innerHTML = "ยังไม่ได้เลือกวิธีการจัดส่งเลยย";}
+if(document.getElementById("1").checked!=true&&document.getElementById("2").checked!=true&&document.getElementById("3").checked!=true){document.getElementById("demo").innerHTML = "ยังไม่ได้เลือกวิธีการจัดส่ง";}
 else{
     var n = document.getElementById("n").value;
 	if(n<0){document.getElementById("demo").innerHTML = "จำนวนเล่มติดลบไม่ได้น้าา";}
   	else if(n==0){document.getElementById("demo").innerHTML = "จะไม่ซื้อซักเล่มเลยหรออ";}
-		else{
+    else if(n%1!=0){document.getElementById("demo").innerHTML = "ทำไมจำนวนเล่มเป็นทศนิยมล่ะ T-T"; }   else{
 	var prize = n*229;
     if(document.getElementById("2").checked==true){prize+=30+10*(n-1);}
     if(document.getElementById("3").checked==true){prize+=60+20*(n-1);}
