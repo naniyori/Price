@@ -24,7 +24,7 @@ body {
   margin-top:20px;
 }
 .typ{
-  
+   margin-top:30vh;
 	text-align: center;
     font-family:"Sukhumvit Set","Prompt", sans-serif;
     color:#000;
@@ -38,9 +38,11 @@ body {
     width: 70px;
 }
 .v{
+	
   margin-top:10px;
 }
 .typ{
+	padding:0% 8% 0% 8%;
      font-size:15px;
 	}
 }
