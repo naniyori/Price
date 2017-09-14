@@ -44,21 +44,3 @@ body {
 }
 
 
-@media screen and (max-width : 800px ){
-.inputa{
-    width: 70px;
-}
-.v{
-  margin-top:10px;
-}
-.ty{
-  margin-left:10vw;
-    font-size:15px;
-}
-.a{
-  margin-top:30vh;
-}
-.typ{
-     font-size:15px;
-}
-}
