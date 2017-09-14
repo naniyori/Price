@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+
+html {
+  font-size: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+
+
+body {
+  background-color:#fff;
+  font-family:sans-serif;
+}
+
+.inputa{
+    width: 70px;
+}
+.v{
+  margin-top:10px;
+}
+.ty{
+  margin-left:25vw;
+	text-align: left;
+    font-family:"Sukhumvit Set","Prompt", sans-serif;
+    color:#000;
+    font-weight:300;
+    font-size:20px;
+}
+.a{
+  margin-top:30vh;
+}
+.typ{
+  
+	text-align: center;
+    font-family:"Sukhumvit Set","Prompt", sans-serif;
+    color:#000;
+    font-weight:300;
+    font-size:20px;
+}
+
+
+@media screen and (max-width : 800px ){
+.inputa{
+    width: 70px;
+}
+.v{
+  margin-top:10px;
+}
+.ty{
+  margin-left:10vw;
+    font-size:15px;
+}
+.a{
+  margin-top:30vh;
+}
+.typ{
+     font-size:15px;
+}
+}
