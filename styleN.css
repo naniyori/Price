@@ -2,11 +2,13 @@
 
 
 html {
+ 
   font-size: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%; }
 
 body {
+  background-image: url("http://www.mx7.com/i/107/BHorrI.JPG");
   margin: 0;
   padding: 0; }
 
@@ -23,13 +25,15 @@ body {
 .v{
   margin-top:20px;
 }
+
 .typ{
-   margin-top:30vh;
+   margin:25vh 20px 20px 20px;
 	text-align: center;
     font-family:"Sukhumvit Set","Prompt", sans-serif;
-    color:#000;
     font-weight:300;
     font-size:20px;
+  background-color:rgba(255, 255, 255, 0.8);
+
 }
 
 
@@ -42,6 +46,7 @@ body {
   margin-top:10px;
 }
 .typ{
+  
 	padding:0% 8% 0% 8%;
      font-size:15px;
 	}
