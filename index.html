@@ -15,8 +15,8 @@
 
   <div class="typ">
     <br>
-    จำนวนเล่ม <input type="number" id="n" class="inputa">
-
+    จำนวนเล่มที่สั่งซื้อ เล่ม 1 <input type="number" id="n1" class="inputa">
+    เล่ม 2 <input type="number" id="n2" class="inputa">
 <form action="">
   <input type="radio" name="type" id="1"> นัดรับ ณ อาคารสยามกิตต์ หรือ อาคารวรรณสรณ์ <br>
   <input type="radio" name="type" id="2"> พัสดุลงทะเบียน<br>
@@ -32,14 +32,19 @@
 function calculate() {
 if(document.getElementById("1").checked!=true&&document.getElementById("2").checked!=true&&document.getElementById("3").checked!=true){document.getElementById("demo").innerHTML = "ยังไม่ได้เลือกวิธีการจัดส่ง";}
 else{
-    var n = document.getElementById("n").value;
-	if(n<0){document.getElementById("demo").innerHTML = "จำนวนเล่มติดลบไม่ได้น้าา";}
-  	else if(n==0){document.getElementById("demo").innerHTML = "จะไม่ซื้อซักเล่มเลยหรออ";}
-    else if(n%1!=0){document.getElementById("demo").innerHTML = "ทำไมจำนวนเล่มเป็นทศนิยมล่ะ T-T"; }   else{
-	var prize = n*229;
-    if(document.getElementById("2").checked==true){prize+=30+10*(n-1);}
-    if(document.getElementById("3").checked==true){prize+=60+20*(n-1);}
-    document.getElementById("demo").innerHTML = prize;}
+    var n1 = document.getElementById("n1").value;
+    var n2 = document.getElementById("n2").value;
+	if(n1<0||n2<0){document.getElementById("demo").innerHTML = "จำนวนเล่มติดลบไม่ได้น้าา";}
+  	else if(n1==0&&n2==0){document.getElementById("demo").innerHTML = "จะไม่ซื้อซักเล่มเลยหรออ";}
+    else if(n1%1!=0||n2%1!=0){document.getElementById("demo").innerHTML = "ทำไมจำนวนเล่มเป็นทศนิยมล่ะ T-T"; }   
+      else{
+        var price=0,n=(parseInt(n1)+parseInt(n2)-1); 
+        if(n1<=n2)price+=499*n1;
+        else if(n2<n1)price+=499*n2;
+        price +=259*Math.abs(n1-n2);
+    if(document.getElementById("2").checked==true){price+=30+10*(n);}
+    if(document.getElementById("3").checked==true){price+=60+20*(n);}
+    document.getElementById("demo").innerHTML = price;}
     }
     
 }
