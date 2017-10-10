@@ -37,7 +37,7 @@ else{
 	if(n1<0||n2<0){document.getElementById("demo").innerHTML = "จำนวนเล่มติดลบไม่ได้น้าา";}
   	else if(n1==0&&n2==0){document.getElementById("demo").innerHTML = "จะไม่ซื้อซักเล่มเลยหรออ";}
     else if(n1%1!=0||n2%1!=0){document.getElementById("demo").innerHTML = "ทำไมจำนวนเล่มเป็นทศนิยมล่ะ T-T"; }   
-    else if(document.getElementById("2").checked==true&&(parseInt(n1)+parseInt(n2))>=4){document.getElementById("demo").innerHTML = "ขออภัย ถ้ามากกว่า 4 เล่ม ต้องส่ง EMS นะคะ"; }  
+    else if(document.getElementById("2").checked==true&&(parseInt(n1)+parseInt(n2))>4){document.getElementById("demo").innerHTML = "ขออภัย ถ้ามากกว่า 4 เล่ม ต้องส่ง EMS นะคะ"; }  
       else{
         var price=0,n=(parseInt(n1)+parseInt(n2)-1); 
         if(n1<=n2)price+=499*n1;
